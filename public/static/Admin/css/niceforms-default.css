@@ -1,0 +1,52 @@
+.login_form{
+    width:600px;
+    height: 250px;
+    background:url('../image/login_bg.png') no-repeat center top;
+    margin:20px 0 0 145px;
+    float:left;
+    padding:0 0 0 0 ;
+}
+
+fieldset{
+    border:none;
+    clear:both;
+}
+
+label {
+    font-size:11px;
+    font-weight: bold;
+    color:#666;
+}
+
+dl{
+    clear:both;
+    width:600px;
+}
+dl .submit{
+    clear:both;
+    width:500px;
+    text-align:center;
+    padding:0 0 0 90px;
+}
+dt{
+    float:left;
+    text-align:right;
+    line-height:34px;
+    padding:0 10px 10px 0 ;
+}
+dd{
+    float:left;
+    width:400px;
+    margin:0 0 10px 0;
+}
+label .check_label{
+    padding:0 0 0 10px;
+    line-height: 32px;
+}
+
+
+
+.NFTextLeft, .NFTextRight {width:10px; height:34px; vertical-align:middle; float:left;}
+.NFTextCenter {height:26px; width:auto;background:url('../img/input.gif') repeat-x 0 0; padding:8px 0 0 0; margin:0; float:left; line-height:27px;}
+.NFRadio {cursor:pointer; position:absolute; display:block; width:20px; height:20px; border:1px solid transparent; background:url('../img/radio.gif') no-repeat 0 0; z-index:2;}
+.NFCheck {cursor:pointer; position:absolute;width:20px; margin:0px 0 0 0; height:20px; border:1px solid transparent; background:url('../img/checkbox.gif') no-repeat 0 0; z-index:2;}

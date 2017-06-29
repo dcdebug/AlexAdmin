@@ -1,39 +1,112 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
+
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <title> AlexAdmin |Powered by Alex</title>
 
     <script type="text/javascript" src="./public/static/Admin/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./public/static/Admin/css/style.css"/>
+<!--
+    <script type="text/javascript" src="./public/static/Admin/js/ddaccordion.js"></script>
+-->
 
+
+
+<!--
+    <script type="text/javascript" src="./public/static/Admin/js/jconfirmaction.jquery.js"></script>
+-->
+<!--    <script type="text/javascript ">
+        $(document).ready(function(){
+
+            $('.ask').jConfirmAction();
+        });
+
+    </script>-->
+
+    <script language="javascript" type="text/javascript" src="./public/static/Admin/js/niceforms.js"></script>
+
+    <link rel="stylesheet" type="text/css"  href="./public/static/Admin/css/niceforms-default.css"/>
 </head>
+<script type="text/javascript">
 
+    var Cat = {
+        name :'',
+    color :''
+    }
+    var cat1 = {};
+    cat1.name="大猫";
+    cat1.color="Yellow";
+    console.log(cat1);
+
+    function Catfun(name,color){
+        return {
+            name :name,
+            color:color
+        }
+    }
+
+    var cat1 = Catfun("二毛","red");
+    console.log(cat1);
+
+
+    function CatCon(name,color){
+        this.name=name;
+        this.color=color;
+    }
+    CatCon.prototype.type="猫科动物";
+    CatCon.prototype.eat=function(){
+            window.alert("etating ");
+        }
+    var cat2 = new CatCon("三毛","Green");
+    console.log(cat2);
+
+</script>
 <body>
 
 <div id="main_container">
     <div class="header_login">
         <div class="logo">
             <a href="#">
-                <img src="/public/static/Admin/image/logo.gif" alt title border="0" />
+                <img src="/public/static/Admin/image/logo.gif" alt="" title="Logo" border="0" />
             </a>
         </div>
     </div>
     <div class="login_form">
         <h3>Admin Login Panel</h3>
         <a href="#" class="forgot_pass">忘记密码</a>
-
         <form action="" method="post" class="niceform">
-
-
             <fieldset>
-
-                Username:
-
-
+                <dl>
+                    <dt><label for="email">Username:</label></dt>
+                    <dd><input type="text" name="" id="" size="54"/></dd>
+                </dl>
+                <dl>
+                    <dt><label for="password">Password:</label></dt>
+                    <dd><input type="text" name="" id="" size="54" /></dd>
+                </dl>
+                <dl>
+                    <dt><label></label></dt>
+                    <dd>
+                        <input type="checkbox" name="interests[]" id="RememberMe" value=""/>
+                        <label class="check_label">Remember me</label>
+                    </dd>
+                </dl>
+                <dl class="submit">
+                    <input type="submit" name="submit" id="submit" value="Enter" />
+                </dl>
             </fieldset>
         </form>
-
     </div>
-
-</div>
+    <div class="footer_login">
+        <div class="left_footer_login">IN ADMIN PANEL | Powered by <a href="#">AlexAdmin</a></div>
+        <div class="right_footer_login"><a href="#"><img src="/public/static/Admin/image/indeziner_logo.gif" alt="Logo" title="Alex Admin Login" border="1"/></a></div>
+    </div>
+    </div>
 </body>
+<script type="text/javascript">
+    //document.execCommand("selectAll");
+    document.execCommand("open");
+</script>
+</html>

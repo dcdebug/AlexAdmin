@@ -17,19 +17,15 @@ label {
     font-weight: bold;
     color:#666;
 }
-
 dl{
     clear:both;
     width:600px;
 }
-dl .submit{
-    clear:both;
-    width:500px;
-    text-align:center;
-    padding:0 0 0 90px;
-}
+dl.submit {clear:both; width:500px; text-align:center; padding:0 0 0 90px;}
+
 dt{
     float:left;
+    width:170px;
     text-align:right;
     line-height:34px;
     padding:0 10px 10px 0 ;
@@ -39,7 +35,7 @@ dd{
     width:400px;
     margin:0 0 10px 0;
 }
-label .check_label{
+label.check_label{
     padding:0 0 0 10px;
     line-height: 32px;
 }

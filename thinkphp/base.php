@@ -9,14 +9,14 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-define('THINK_VERSION', '5.0.9');
-define('THINK_START_TIME', microtime(true));
-define('THINK_START_MEM', memory_get_usage());
-define('EXT', '.php');
+define('THINK_VERSION', '5.0.9'); //ThinkPHP版本
+define('THINK_START_TIME', microtime(true)); //开始时间错
+define('THINK_START_MEM', memory_get_usage()); //开始分配的内存
+define('EXT', '.php'); //文件后缀
 define('DS', DIRECTORY_SEPARATOR);
-defined('THINK_PATH') or define('THINK_PATH', __DIR__ . DS);
-define('LIB_PATH', THINK_PATH . 'library' . DS);
-define('CORE_PATH', LIB_PATH . 'think' . DS);
+defined('THINK_PATH') or define('THINK_PATH', __DIR__ . DS); //thinkphp的库
+define('LIB_PATH', THINK_PATH . 'library' . DS); //库名称
+define('CORE_PATH', LIB_PATH . 'think' . DS); // 核心库
 define('TRAIT_PATH', LIB_PATH . 'traits' . DS);
 defined('APP_PATH') or define('APP_PATH', dirname($_SERVER['SCRIPT_FILENAME']) . DS);
 defined('ROOT_PATH') or define('ROOT_PATH', dirname(realpath(APP_PATH)) . DS);

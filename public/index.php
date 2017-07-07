@@ -11,6 +11,7 @@
 
 // [ 应用入口文件 ]
 
+var_dump($_SERVER['SCRIPT_FILENAME']);
 
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/../app/');
